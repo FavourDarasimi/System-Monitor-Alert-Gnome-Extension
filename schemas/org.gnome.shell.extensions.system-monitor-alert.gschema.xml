@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.system-monitor-alert"
+          path="/org/gnome/shell/extensions/system-monitor-alert/">
+
+    <key name="cpu-threshold" type="i">
+      <range min="10" max="100"/>
+      <default>85</default>
+      <summary>CPU alert threshold</summary>
+      <description>Percentage of CPU usage that triggers a notification</description>
+    </key>
+
+    <key name="mem-threshold" type="i">
+      <range min="10" max="100"/>
+      <default>85</default>
+      <summary>Memory alert threshold</summary>
+      <description>Percentage of RAM usage that triggers a notification</description>
+    </key>
+
+    <key name="check-interval" type="i">
+      <range min="1" max="60"/>
+      <default>3</default>
+      <summary>Check interval</summary>
+      <description>How often, in seconds, to sample CPU and RAM usage</description>
+    </key>
+
+    <key name="alert-cooldown" type="i">
+      <range min="10" max="3600"/>
+      <default>60</default>
+      <summary>Alert cooldown</summary>
+      <description>Minimum time, in seconds, between repeated alerts of the same kind</description>
+    </key>
+
+  </schema>
+</schemalist>

@@ -1,0 +1,10 @@
+{
+  "uuid": "system-monitor-alert@local.dev",
+  "name": "System Monitor Alert",
+  "description": "Shows live CPU and RAM usage in the top panel and pops up a notification listing the top resource-hungry apps whenever usage crosses a threshold you set.",
+  "shell-version": ["45", "46", "47", "48", "49", "50", "51"],
+  "url": "",
+  "version": 1,
+  "gettext-domain": "system-monitor-alert",
+  "settings-schema": "org.gnome.shell.extensions.system-monitor-alert"
+}
